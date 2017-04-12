@@ -16,7 +16,7 @@
 // write your code here
 
 
-
+var groceries: [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,8 +25,7 @@
  */
 // write your code here
 
-
-
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -37,7 +36,9 @@
 // write your code here
 
 
-
+for numb in numbers{
+    print(numb)
+}
 
 
 
@@ -48,7 +49,9 @@
 // write your code here
 
 
-
+for item in groceries{
+    print(item)
+}
 
 
 
@@ -58,7 +61,20 @@
  */
 // write your code here
 
+func something(names: [String]){
 
+    for name in names{
+        if name == "Michael"{
+        
+            print("Top of the morning Michael!")
+        }else{
+        
+            print("Good Morning \(name)")
+        }
+    
+    }
+
+}
 
 
 
@@ -68,6 +84,20 @@
  */
 // write your code here
 
+func goThrough(numbers: [Int]) -> [Int]{
+    
+    var answer: [Int] = []
+
+    for n in numbers{
+    
+        if n < 50{
+        
+            answer.append(n)
+        
+        }
+    }
+    return answer
+}
 
 
 
